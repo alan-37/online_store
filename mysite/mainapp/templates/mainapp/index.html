@@ -1,0 +1,124 @@
+{% extends 'mainapp/wrapper.html' %}
+{% load static %}
+{% block title %}
+<title> Главная страница </title>
+{% endblock title %}
+{% block content %}
+	<header class="header" id="header">
+		<!--header-start-->
+		<div class="container">
+			<figure class="logo animated fadeInDown delay-07s">
+				<a href="#"><img src="{% static 'img/logo1.png' %}" width="130" height="133" alt=""></a>
+			</figure>
+			<h1 class="animated fadeInDown delay-07s">Добро пожаловать в брендовый магазин одежды CSM</h1>
+			<ul class="we-create animated fadeInUp delay-1s">
+				<li>Мы продаем молодежную и качественную одежду</li>
+			</ul>
+			<a class="link animated fadeInUp delay-1s servicelink" href="{% url 'shop' %}">Перейти к покупкам</a>
+		</div>
+	</header>
+	<!--header-end-->
+	<!--main-section-end-->
+	<section class="main-section" id="service">
+		<!--main-section-start-->
+		<div class="container">
+			<h2>Что мы продаём?</h2>
+			<h6>У нас представлен огромный выбор товаров.</h6>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>головные уборы</h3>
+							<p>У нас представлен огромный выбор головных уборов таких как: балаклавы, панамки и шапки.</p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-ticket"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>нашивки на одежду</h3>
+							<p> Мы продаем очень много различных нашивок на одежду (патчи).</p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-rocket"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>кофты</h3>
+							<p> У нас вы найдете очень много различных кофт которые можно носить с патчами или же просто красивой вышивкой.</p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-shopping-cart"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>футболки</h3>
+							<p>Мы предлагаем огромный выбор футболок с различными вышивками ручной работы. </p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-shopping-bag"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>поясные сумки</h3>
+							<p>Также стоит отметить что на наших поясных сумках можно изменить дизайн с помощью патчей.</p>
+						</div>
+					</div>
+				</div>
+				<figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
+					<img src="{% static 'img/hudi.png' %}" alt="">
+				</figure>
+
+			</div>
+		</div>
+	</section>
+	<section class="main-section alabaster">
+		<!--main-section alabaster-start-->
+		<div class="container">
+			<div class="row">
+				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
+					<img src="{% static 'img/sweatshirt.png' %}" alt="">
+				</figure>
+				<div class="col-lg-7 col-sm-8 featured-work">
+					<h2>почему выбирают именно нас</h2>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-02s">
+							<i class="fa fa-truck"></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-02s">
+							<h3>доставка по всей россии</h3>
+						</div>
+					</div>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-04s">
+							<i class="fa fa-thumbs-up"></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-04s">
+							<h3>качественный товар и огромный ассортимент</h3>
+							<p>Мы шьем одежду и все различные нашивки на ней сами </p>
+						</div>
+					</div>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-06s">
+							<i class="fa fa-shopping-bag "></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-06s">
+							<h3>молодежная и современная одежда</h3>
+							<p>Мы производим одежду только для молодежи так, что если ты молод или чувствуешь себя молодым, то тебе к нам :)  </p>
+						</div>
+					</div>
+					<a class="link animated fadeInUp delay-1s servicelink" href="{% url 'shop' %}">Перейти к покупкам</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+{% endblock content %}

@@ -1,0 +1,51 @@
+{% extends 'mainapp/wrapper.html' %}
+{% load static %}
+{% block title %}
+<title> FAQ </title>
+{% endblock title %}
+{% block content %}
+	<section class="main-section" id="service">
+		<!--main-section client-part-start-->
+		<div class="container">
+			<h2>Ответы на частые вопросы</h2>
+			<div class="row">
+				<div class="col-lg-12">
+                    <p  class="client-part-haead wow fadeInDown delay-05 animated" style="color: black; visibility: visible; animation-name: fadeInDown;">
+                        <a href="#n1">Как ухаживать за товаром?</a></p>
+                    <p  class="client-part-haead wow fadeInDown delay-05 animated" style="color: black; visibility: visible; animation-name: fadeInDown;">
+                        <a href="#n2">Я не хочу доставку, а хочу приехать за товаром сам. У вас есть самовывоз?</a></p>
+                    <p  class="client-part-haead wow fadeInDown delay-05 animated" style="color: black; visibility: visible; animation-name: fadeInDown;">
+                        <a href="#n3">Можно ли заказать доставку в мой город?</a></p>
+                        <br>
+                        <br>
+                    <p id="n1" class="client-part-haead wow fadeInDown delay-05 animated" style="color: black; visibility: visible; animation-name: fadeInDown;"> <strong> Как ухаживать за товаром?</strong>
+                        <br>
+                        <br>
+                        Рекомендации по уходу:
+                        <br>
+                    - Минимальная температура глажки
+                        <br>
+                    - Ручная стирка (вещь вывернуть наизнанку)
+                        <br>
+                    - Не перекручивать (при отжиме)
+                        <br>
+                    - Химическая чистка запрещена
+                        <br>
+                    - Не отбеливать
+					</p>
+                    <br>
+                    <p id="n2" class="client-part-haead wow fadeInDown delay-05 animated" style="color: black; visibility: visible; animation-name: fadeInDown;"><strong>Я не хочу доставку, а хочу приехать за товаром сам. У вас есть самовывоз?</strong></p>
+                                        <p  class="client-part-haead wow fadeInDown delay-05 animated" style="color: black; visibility: visible; animation-name: fadeInDown;">К сожалению, пока нет возможности забрать товар самовывозом. Но мы планируем открывать свои магазины в крупных городах России.</p>
+                                        <br>
+                    <p id="n3" class="client-part-haead wow fadeInDown delay-05 animated" style="color: black; visibility: visible; animation-name: fadeInDown;"><strong>Можно ли заказать доставку в мой город?</strong></p>
+                                        <p  class="client-part-haead wow fadeInDown delay-05 animated" style="color: black; visibility: visible; animation-name: fadeInDown;">Мы доставляем заказы в любую точку России, в Беларусь и Казахстан Почтой России.</p>
+                    <br>
+                    <br>
+                    <p class="client-part-haead wow fadeInDown delay-05 animated" style="color: black; visibility: visible; animation-name: fadeInDown;">
+                        <strong>Остались вопросы? <a href="{% url 'contact' %}">Пишите нам.</a></strong>
+                    </p>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock content %}

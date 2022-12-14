@@ -1,0 +1,40 @@
+{% extends 'mainapp/wrapper.html' %}
+{% load static %}
+{% block title %}
+<title> {{ product.name }} </title>
+{% endblock title %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <img src="{{product.images.url}}">
+            </div>
+            <div class="col-lg-6">
+                <h1>{{ product.name }}</h1>
+                <div>
+                    <h3 style="font-size: 20px"><strong>Цена: {{ product.price }} р.</strong></h3>
+                </div>
+                <div>
+                    <p>{{ product.description }}</p>
+                </div>
+                <br>
+
+
+                <div>
+                    <form class="form-inline" id="buy_product" action="{% url 'adding' %}" method = "POST"> {% csrf_token %}
+                        <div class="form-group mb-1">
+                            <input class="form-control" type="number" value="1" placeholder="Количество" min="1" max='{{ product.quantity }}' name="number" id="number" style="width:150px" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-buy" id="buy" style="font-size: 20px"
+                        data-product_id = '{{ product.id }}'
+                        data-name = '{{ product.name }}'
+                        data-price = '{{ product.price }}' data-max = '{{ product.quantity }}'
+
+                        >Добавить в корзину <i class="fa fa-shopping-basket"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

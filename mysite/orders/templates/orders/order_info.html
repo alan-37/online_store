@@ -1,0 +1,13 @@
+{% extends 'mainapp/wrapper.html' %}
+{% load static %}
+{%block title%}
+    <title>Информация о заказе</title>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        {% if not products_in_basket %}
+            <h1>Заказ успешно оформлен</h1>
+            <p>{{ order_id }}</p>
+        {% endif %}
+    </div>
+{% endblock %}
